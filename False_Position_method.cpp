@@ -18,7 +18,7 @@ void False(double a,double b,double eph)
     double c;
     int itr=1;
 
-    while(abs(b-a)>=eph)
+    while(abs(func(c))>=eph)
     {
         c=((a*func(b))-(b*func(a)))
           /(func(b)-func(a));
