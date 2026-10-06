@@ -14,7 +14,7 @@ void modified_bisection(double a,double b,int n)
         fb=f(b);
         xr=(a*fabs(fb)+b*fabs(fa))/(fabs(fa)+fabs(fb));
         fxr=f(xr);
-        cout<<""<<i<<" "<<a<<" "<<b<<" "<<xr<<" "<<fxr<<endl;
+                cout<<""<<i<<"\t\t"<<a<<"\t\t"<<b<<"\t\t"<<f(a)<<"\t\t"<<f(b)<<"\t\t"<<xr<<"\t\t"<<fxr<<endl;
         if(fxr==0)
             break;
         else if(fa*fxr>0)
